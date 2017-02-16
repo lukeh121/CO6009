@@ -99,6 +99,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="defaultMaster.Master" />
+    <Content Include="Fonts\Quicksand_Bold.otf" />
+    <Content Include="Fonts\Quicksand_Bold_Oblique.otf" />
+    <Content Include="Fonts\Quicksand_Book.otf" />
+    <Content Include="Fonts\Quicksand_Book_Oblique.otf" />
+    <Content Include="Fonts\Quicksand_Dash.otf" />
+    <Content Include="Fonts\Quicksand_Light.otf" />
+    <Content Include="Fonts\Quicksand_Light_Oblique.otf" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

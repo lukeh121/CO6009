@@ -12,8 +12,10 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server">
-        
+        <h1 class="pageLogo"> Asset+ </h1>
+
+        <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server"> <!-- Body Placeholder Starts Here -->
+
         </asp:ContentPlaceHolder>
     </div>
     </form>
