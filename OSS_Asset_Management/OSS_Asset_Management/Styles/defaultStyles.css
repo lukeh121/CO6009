@@ -5,12 +5,17 @@
     font-family: 'Quicksand_Bold';
     src: url('../Fonts/Quicksand_Bold.otf') format('opentype');
 }
+
+@font-face {
+    font-family: 'Quicksand_Book';
+    src: url('../Fonts/Quicksand_Book.otf') format('opentype');
+}
 h1,h2,h3{
    font-family: Quicksand_Bold,cursive;
    text-shadow: 0px 0px 4px #000000;
 }
 p{
- font-family:Quicksand_Bold,cursive;
+    font-family: Quicksand_Book,cursive;
 }
 
 h1.pageLogo{
@@ -20,7 +25,7 @@ h1.pageLogo{
     font-family:Quicksand_Bold, cursive;
     font-size: 20pt;
     color: white;
-    text-shadow: 0px 0px 4px #000000;
+    text-shadow: 0px 0px 4px #616161;
     box-shadow: 5px 0 5px -5px #333;
 }
 #logoContainer{
@@ -40,5 +45,26 @@ h1.pageLogo{
     font-size: 13pt;
     color: white;
     text-shadow: 0px 0px 4px #000000;
-  
+}
+div.loginCard{
+    margin:auto;
+    position:center;
+    color:#262626;
+    background-color:white;
+    box-shadow: 0 8px 16px 0 #616161;
+    width:40%;
+    height:40%;
+    border-radius:3px;
+    text-align:center;
+   
+
+}
+p.LoginText{
+    padding-top:10px;
+    font-size:13px;
+    text-shadow: 0px 0px 4px #616161;
+}
+.labelFields{
+    font-family:Quicksand_Book,cursive;
+    display:inline-block;
 }
