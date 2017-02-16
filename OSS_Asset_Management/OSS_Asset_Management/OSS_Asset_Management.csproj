@@ -94,10 +94,8 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="default.aspx" />
     <Content Include="packages.config" />
-    <Content Include="ApplicationInsights.config">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
     <Content Include="defaultMaster.Master" />
     <Content Include="Fonts\Quicksand_Bold.otf" />
     <Content Include="Fonts\Quicksand_Bold_Oblique.otf" />
@@ -121,6 +119,13 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="default.aspx.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="default.aspx.designer.cs">
+      <DependentUpon>default.aspx</DependentUpon>
+    </Compile>
     <Compile Include="defaultMaster.Master.cs">
       <DependentUpon>defaultMaster.Master</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

@@ -12,8 +12,17 @@
 <body>
     <form id="form1" runat="server">
     <div>
-        <h1 class="pageLogo"> Asset+ </h1>
+        <div id ="navbarHorizontal">
+            <div id="logoContainer">
+           
+                    <h1 class ="pageLogo"> Asset+ <span id="pageName">IT Asset Management</span></h1>
+              
+           
 
+            </div>
+           
+           
+        </div>
         <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server"> <!-- Body Placeholder Starts Here -->
 
         </asp:ContentPlaceHolder>
