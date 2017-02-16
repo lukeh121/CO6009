@@ -3,7 +3,7 @@
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyPlaceHolder" runat="server">
     <div class="loginCard">
-        <div id="loginFunction">
+       <div id="loginContainer">
       <p class="loginText"> Welcome To Asset+ </p>
       <p class="loginText"> Please Enter Your Login Credentials</p>
       
@@ -13,7 +13,8 @@
             <div id ="password">
             <asp:TextBox ID="txtPassword" runat="server" CssClass="txtBoxLogin"></asp:TextBox>
            </div>
-       </div> 
+           <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnLogin"/>
+       </div>
 </div>
 
 

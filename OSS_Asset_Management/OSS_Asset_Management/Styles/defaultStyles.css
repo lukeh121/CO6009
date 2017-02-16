@@ -4,7 +4,8 @@
     overflow:hidden;
 }
 body {
-     background-color: #262626;
+    	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
+
 }
 @font-face {
     font-family: 'Quicksand_Bold';
@@ -17,7 +18,7 @@ body {
 }
 h1,h2,h3{
    font-family: Quicksand_Bold,cursive;
-   text-shadow: 0px 0px 4px #000000;
+   text-shadow: 0px 0px 4px #000;
 }
 p{
     font-family: Quicksand_Bold;
@@ -30,7 +31,7 @@ h1.pageLogo{
     font-family:Quicksand_Bold, cursive;
     font-size: 20pt;
     color: white;
-    text-shadow: 0px 0px 4px #616161;
+    text-shadow: 0px 0px 4px #000;
     box-shadow: 6px 0 5px -6px #333;
 }
 #logoContainer{
@@ -40,7 +41,6 @@ h1.pageLogo{
 
 #navbarHorizontal{
     height:10%;
-    background-color: #262626;
     box-shadow: 0px 2px 0px #eae4e4;
 }
 #pageName {
@@ -49,7 +49,7 @@ h1.pageLogo{
     font-family: Quicksand_Bold,cursive;
     font-size: 13pt;
     color: white;
-    text-shadow: 0px 0px 4px #000000;
+    text-shadow: 0px 0px 4px #000;
 }
 div.loginCard{
     margin:auto;
@@ -57,12 +57,11 @@ div.loginCard{
     color:#262626;
     background-color:white;
     box-shadow: 0 8px 16px 0 #616161;
-    width:40%;
-    height:40%;
+    padding:25px;
     border-radius:3px;
     text-align:center;
 	top: 30%;
-	left: 30%;
+
 }
 p.LoginText{
     font-family:Quicksand_Book;
@@ -72,11 +71,11 @@ p.LoginText{
     text-shadow: 0px 0px 4px #616161;
 }
 .txtBoxLogin{
+    font-family:Quicksand_Book,cursive;
     width: 40%; 
 	margin-bottom: 10px; 
 	background: rgba(0,0,0,0.2);
 	border: none;
-	
 	font-size: 13px;
 	color: black;
 	border: 1px solid #000;
@@ -84,9 +83,20 @@ p.LoginText{
 	outline: none;
 	padding: 10px;
 }
-#loginFunction{
-    margin:auto;
-    position:absolute;
-    top: 20%;
-	left:20%;
+.btnLogin{
+    border:none;
+    padding-left:5px;
+    padding-right:5px;
+    color: white;
+    font-family:Quicksand_Bold, cursive;
+    width:48%;
+    background-color:#262626;
+    text-align:center;
+    font-size:13pt;
+    border-radius:2px;
+
+}
+.btnLogin:hover{
+    transition:0.3s ease-in;
+    background-color:#1487BF;
 }
