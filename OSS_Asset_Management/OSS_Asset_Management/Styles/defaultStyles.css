@@ -23,7 +23,11 @@ h1,h2,h3{ /* Setting default heading styles*/
 p{ /*Setting default pararaph*/
     font-family: Quicksand_Bold;
 }
-
+h1.pageTitle{
+    color:white;
+    padding-left:10px;
+    font-size:16pt;
+}
 h1.pageLogo{
     padding-left:5px;
     padding-bottom:10px;
@@ -51,16 +55,23 @@ h1.pageLogo{
     color: white;
     text-shadow: 0px 0px 4px #000;
 }
+#footer {
+   position: absolute;
+     height: 50px;
+    bottom: 0;
+    width: 100%;
+    left: 0;
+}
 p.pageFooter{
     position: center;
     text-align:center;
     font-family: Quicksand_Book,cursive;
+    
     font-size: 12pt;
     color: white;
     text-shadow: 0px 0px 4px #000;
 }
 div.loginCard{
-    
     margin:auto;
     position:center;
     color:#262626;
@@ -69,13 +80,13 @@ div.loginCard{
     padding:25px;
     border-radius:3px;
     text-align:center;
-    
     width:30%;
-
+    padding-bottom:35px;
 }
 #loginGreeting{
     color:#1487BF;
     font-size:14pt;
+   
 }
 p.LoginText{
     font-family:Quicksand_Book;
@@ -97,6 +108,10 @@ p.LoginText{
 	outline: none;
 	padding: 10px;
 }
+.txtBoxLogin:hover {
+    background: rgba(0,0,0,0.4);
+    transition: 0.2s ease-in;
+}
 .btnLogin{
     border:none;
     color: white;
@@ -106,7 +121,6 @@ p.LoginText{
     text-align:center;
     font-size:13pt;
     border-radius:2px;
-
 }
 .btnLogin:hover{
     transition:0.3s ease-in;

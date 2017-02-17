@@ -24,11 +24,12 @@
            
         </div>
         <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server"> <!-- Body Placeholder Starts Here -->
-
         </asp:ContentPlaceHolder>
+
         <div id="footer">
             <footer>
-                <p class ="pageFooter"> Asset+ </p> 
+                <p class ="pageFooter">  Asset+  </p> 
+                
             </footer>
         </div>
     </div>
