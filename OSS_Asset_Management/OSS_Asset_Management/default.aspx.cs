@@ -11,8 +11,8 @@ namespace OSS_Asset_Management
     {
         protected void Page_Load(object sender, EventArgs e)
         {
-            txtUser.Attributes["placeholder"] = "Username";
-            txtPassword.Attributes["placeholder"] = "Password";
+            txtUser.Attributes["placeholder"] = "Username"; // add a placeholder to the username text box
+            txtPassword.Attributes["placeholder"] = "Password"; // adds an additonal place holder
         }
     }
 }

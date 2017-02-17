@@ -4,10 +4,10 @@
     overflow:hidden;
 }
 body {
-    	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(104,128,138,.4) 10%,rgba(138,114,76,0) 40%), linear-gradient(to bottom,  rgba(57,173,219,.25) 0%,rgba(42,60,87,.4) 100%), linear-gradient(135deg,  #670d10 0%,#092756 100%);
-
+    background: #1487BF; /*Default Background incase webkit not supported*/
+	background: -webkit-radial-gradient(0% 100%, ellipse cover, rgba(0,171,255,.4) 10%,rgba(53,88,108,.5) 40%),  -webkit-linear-gradient(-45deg,  #1487BF 0%,#9BDDFF 100%), -webkit-linear-gradient(top,  rgba(0,0,35,.5) 0%,rgba(10,67,95,.4) 100%);
 }
-@font-face {
+@font-face { /*creating a new font family from a font file*/
     font-family: 'Quicksand_Bold';
     src: url('../Fonts/Quicksand_Bold.otf') format('opentype');
 }
@@ -16,11 +16,11 @@ body {
     font-family: 'Quicksand_Book';
     src: url('../Fonts/Quicksand_Book.otf') format('opentype');
 }
-h1,h2,h3{
+h1,h2,h3{ /* Setting default heading styles*/
    font-family: Quicksand_Bold,cursive;
    text-shadow: 0px 0px 4px #000;
 }
-p{
+p{ /*Setting default pararaph*/
     font-family: Quicksand_Bold;
 }
 
@@ -51,17 +51,31 @@ h1.pageLogo{
     color: white;
     text-shadow: 0px 0px 4px #000;
 }
+p.pageFooter{
+    position: center;
+    text-align:center;
+    font-family: Quicksand_Book,cursive;
+    font-size: 12pt;
+    color: white;
+    text-shadow: 0px 0px 4px #000;
+}
 div.loginCard{
+    
     margin:auto;
-    position:absolute;
+    position:center;
     color:#262626;
     background-color:white;
-    box-shadow: 0 8px 16px 0 #616161;
+    box-shadow: 0 8px 16px 0 #333;
     padding:25px;
     border-radius:3px;
     text-align:center;
-	top: 30%;
+    
+    width:30%;
 
+}
+#loginGreeting{
+    color:#1487BF;
+    font-size:14pt;
 }
 p.LoginText{
     font-family:Quicksand_Book;
@@ -85,11 +99,9 @@ p.LoginText{
 }
 .btnLogin{
     border:none;
-    padding-left:5px;
-    padding-right:5px;
     color: white;
     font-family:Quicksand_Bold, cursive;
-    width:48%;
+    width:40%;
     background-color:#262626;
     text-align:center;
     font-size:13pt;

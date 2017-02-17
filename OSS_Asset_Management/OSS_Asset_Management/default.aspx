@@ -4,7 +4,7 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="bodyPlaceHolder" runat="server">
     <div class="loginCard">
        <div id="loginContainer">
-      <p class="loginText"> Welcome To Asset+ </p>
+      <p class="loginText"> <span id="loginGreeting">Welcome To Asset+ </span></p>
       <p class="loginText"> Please Enter Your Login Credentials</p>
       
            <div id="username">
@@ -16,6 +16,7 @@
            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnLogin"/>
        </div>
 </div>
+
 
 
 
