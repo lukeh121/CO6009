@@ -97,7 +97,6 @@
     <Content Include="AdministratorPages\admin.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Styles\userArea.css" />
-    <Content Include="UserArea\default.aspx" />
     <Content Include="packages.config" />
     <Content Include="defaultMaster.Master" />
     <Content Include="Fonts\Quicksand_Bold.otf" />
@@ -107,6 +106,8 @@
     <Content Include="Fonts\Quicksand_Dash.otf" />
     <Content Include="Fonts\Quicksand_Light.otf" />
     <Content Include="Fonts\Quicksand_Light_Oblique.otf" />
+    <Content Include="UserArea\default.aspx" />
+    <Content Include="UserArea\userMaster.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -146,6 +147,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="UserArea\default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -153,7 +155,13 @@
     <Compile Include="UserArea\default.aspx.designer.cs">
       <DependentUpon>default.aspx</DependentUpon>
     </Compile>
-    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="UserArea\userMaster.Master.cs">
+      <DependentUpon>userMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\userMaster.Master.designer.cs">
+      <DependentUpon>userMaster.Master</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />

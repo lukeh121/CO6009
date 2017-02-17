@@ -1,0 +1,46 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="userMaster.Master.cs" Inherits="OSS_Asset_Management.UserArea.Site1" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title>userMaster</title>
+    <link href="../Styles/defaultStyles.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/userArea.css" rel="stylesheet" type="text/css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <div id ="navbarHorizontal">
+            <div id="logoContainer">
+                    <h1 class ="pageLogo"> Asset+ <span id="pageName">IT Asset Management</span></h1>
+            </div>
+        </div>
+        
+        <asp:ContentPlaceHolder ID="titleBodyPlaceHolder" runat="server"> <!-- Title Placeholder Starts Here -->
+        </asp:ContentPlaceHolder>
+           
+        <div id="navigationBar"> <!-- User Navigation Bar --> 
+            <nav> <!-- Navigation Container -->
+                <ul><!-- styles in UserArea.css -->
+                    <li><a href="default.aspx"> Home </a></li>
+                    <li><a href=""> Create New Asset </a></li>
+                </ul>
+            </nav>
+        </div>
+        <asp:ContentPlaceHolder ID="userBodyPlaceHolder" runat="server"> <!-- User Body Placeholder -->
+
+        </asp:ContentPlaceHolder>
+     
+
+        <div id="footer">
+            <footer>
+                <p class ="pageFooter">  Asset+  </p> 
+            </footer>
+        </div>
+    </div>
+    </form>
+</body>
+</html>

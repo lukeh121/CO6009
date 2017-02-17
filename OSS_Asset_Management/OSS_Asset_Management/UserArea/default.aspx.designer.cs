@@ -7,7 +7,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace OSS_Asset_Management.MainPages
+namespace OSS_Asset_Management.UserArea
 {
 
 

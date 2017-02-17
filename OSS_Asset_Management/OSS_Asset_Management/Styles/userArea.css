@@ -1,2 +1,23 @@
 ﻿body {
+   
+}
+@font-face {
+    font-family: 'Quicksand_Book';
+    src: url('../Fonts/Quicksand_Book.otf') format('opentype');
+}
+a{
+    border:solid 2px;
+    color:#1487BF;
+    font-family:Quicksand_Book,cursive;
+    text-decoration:none;
+}
+li{
+    list-style:none;
+    paddint-top: 5px;
+    padding-bottom:5px;
+}
+#navigationBar{
+    background-color:white;
+   
+    border-radius:2px;
 }
