@@ -111,6 +111,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="AdministratorPages\admin.aspx" />
+    <Content Include="adminPages\createUser.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Styles\userArea.css" />
     <Content Include="packages.config" />
@@ -145,6 +146,13 @@
     </Compile>
     <Compile Include="AdministratorPages\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\createUser.aspx.cs">
+      <DependentUpon>createUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\createUser.aspx.designer.cs">
+      <DependentUpon>createUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
