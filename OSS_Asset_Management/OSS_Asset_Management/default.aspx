@@ -11,7 +11,7 @@
              <asp:TextBox ID="txtUser" runat="server" CssClass="txtBoxLogin"></asp:TextBox>
            </div>
             <div id ="password">
-            <asp:TextBox ID="txtPassword" runat="server" CssClass="txtBoxLogin"></asp:TextBox>
+            <asp:TextBox ID="txtPassword" runat="server" CssClass="txtBoxLogin" TextMode="Password"></asp:TextBox>
            </div>
            <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnLogin"/>
        </div>
