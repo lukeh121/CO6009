@@ -2,10 +2,12 @@
 
 <!DOCTYPE html>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
 <head runat="server">
     <title>defaultMaster</title> <!-- Master title -->
     <link rel="stylesheet" type="text/css" href="Styles/defaultStyles.css" /> <!-- default style sheet-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- enabling viewport width -->
+    <meta charset="UTF-8"/> 
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
