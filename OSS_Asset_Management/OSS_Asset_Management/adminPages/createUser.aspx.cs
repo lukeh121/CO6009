@@ -15,7 +15,6 @@ namespace OSS_Asset_Management.adminPages
         {
             txtNewUser.Attributes["placeholder"] = "Enter a New Username"; // add a placeholder to the username text box
             txtNewPassword.Attributes["placeholder"] = "Enter a New Password"; // adds an additonal place holder
-            txtConfNewPassword.Attributes["placeholder"] = "Confirm New Password";
             txtEmail.Attributes["placeholder"] = "Enter User's Email Address";
         }
 
@@ -24,12 +23,12 @@ namespace OSS_Asset_Management.adminPages
             var idDbContext = new IdentityDbContext("userConnectionString");
             var userStore = new UserStore<IdentityUser>(idDbContext);
             var uMan = new UserManager<IdentityUser>(userStore);
-            var user = new IdentityUser() { UserName = txtNewUser.Text, Email = txtEmail.Text, Id = txtFullName.Text };
+            var user = new IdentityUser() { UserName = txtNewUser.Text, Email = txtEmail.Text };
             IdentityResult r = uMan.Create(user, txtNewPassword.Text);
             //validation
             if (r.Succeeded)
             {
-                registerLiteral.Text = ("Successfully Created " + txtFullName.Text + "'s Account");
+                registerLiteral.Text = ("Successfully Created " + txtNewUser.Text + "'s Account");
             }
             else
                 registerLiteral.Text = "Error Creating Account: " + r.Errors.FirstOrDefault();

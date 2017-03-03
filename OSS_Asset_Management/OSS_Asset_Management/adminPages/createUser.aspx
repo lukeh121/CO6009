@@ -7,18 +7,13 @@
         <div id="user">
             <asp:TextBox ID="txtNewUser" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
         </div>
-        <div id ="fullName">
-            <asp:TextBox ID="txtFullName" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
-        </div>
         <div id ="userEmail">
              <asp:TextBox ID="txtEmail" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
         </div>
         <div id="pass">
              <asp:TextBox ID="txtNewPassword" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
         </div>
-        <div id="confPass">
-             <asp:TextBox ID="txtConfNewPassword" runat="server" CssClass="txtBoxNewLogin" OnTextChanged="txtConfNewPassword_TextChanged"></asp:TextBox>
-        </div>
+       
         <div id ="registerButton">
             <asp:Button ID="btnRegister" runat="server" Text="Submit" CssClass="btnSubmit" OnClick="btnRegister_Click"/>
         </div>

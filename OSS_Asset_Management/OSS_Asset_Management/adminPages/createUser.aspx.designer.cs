@@ -22,15 +22,6 @@ namespace OSS_Asset_Management.adminPages {
         protected global::System.Web.UI.WebControls.TextBox txtNewUser;
         
         /// <summary>
-        /// txtFullName control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtFullName;
-        
-        /// <summary>
         /// txtEmail control.
         /// </summary>
         /// <remarks>
@@ -47,15 +38,6 @@ namespace OSS_Asset_Management.adminPages {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtNewPassword;
-        
-        /// <summary>
-        /// txtConfNewPassword control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.TextBox txtConfNewPassword;
         
         /// <summary>
         /// btnRegister control.
