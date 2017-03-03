@@ -26,13 +26,24 @@ namespace OSS_Asset_Management
             var user = uMan.Find(txtUser.Text, txtPassword.Text);
             if (user != null)
             {
-                //todo
+                LogUserIn(uMan, user);
+                Response.Redirect("~/UserArea/default.aspx");
             }
             else
             {
                 litSuccess.Text = "Invalid Username or Password";
             }
         }
-        
+        private void LogUserIn(UserManager<IdentityUser> uMan, IdentityUser user)
+        {
+            var authMan = HttpContext.Current.GetOwinContext().Authentication;
+            var userId = uMan.CreateIdentity(user, DefaultAuthenticationTypes.ApplicationCookie);
+            authMan.SignIn(new AuthenticationProperties() { }, userId);
+
+
+
+
+
+        }
     }
 }

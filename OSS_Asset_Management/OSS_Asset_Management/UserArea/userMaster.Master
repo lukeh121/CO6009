@@ -17,6 +17,9 @@
             <div id="logoContainer">
                     <h1 class ="pageLogo"> Asset+ <span id="pageName">IT Asset Management</span></h1>
             </div>
+            <div id="login">
+            <asp:LoginName ID="userName" runat="server" CssClass="pageTitle" />
+            <asp:LoginStatus ID="loginStatus" runat="server" CssClass="pageTitle" /> </div>
         </div>
         
         <asp:ContentPlaceHolder ID="titleBodyPlaceHolder" runat="server"> <!-- Title Placeholder Starts Here -->
