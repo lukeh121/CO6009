@@ -31,7 +31,7 @@ namespace OSS_Asset_Management
             }
             else
             {
-                litSuccess.Text = "Invalid Username or Password";
+                litError.Text = "Invalid Username or Password";
             }
         }
         private void LogUserIn(UserManager<IdentityUser> uMan, IdentityUser user)

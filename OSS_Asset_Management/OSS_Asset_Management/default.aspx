@@ -13,8 +13,10 @@
             <div id ="password">
             <asp:TextBox ID="txtPassword" runat="server" CssClass="txtBoxLogin" TextMode="Password"></asp:TextBox>
            </div>
-           <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnLogin" OnClick="btnLogin_Click"/>
-           <asp:Literal ID="litSuccess" runat="server"></asp:Literal>
+             <asp:Button ID="btnLogin" runat="server" Text="Login" CssClass="btnLogin" OnClick="btnLogin_Click"/>
+           <div class="errorLit">
+             <asp:Literal ID="litError" runat="server" ></asp:Literal> 
+           </div>
        </div>
 </div>
 
