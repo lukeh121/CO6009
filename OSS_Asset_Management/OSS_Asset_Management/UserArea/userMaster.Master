@@ -19,7 +19,7 @@
             </div>
             <div id="login">
             <asp:LoginName ID="userName" runat="server" CssClass="pageTitle" />
-            <asp:LoginStatus ID="loginStatus" runat="server" CssClass="pageTitle" /> </div>
+            <asp:LoginStatus ID="loginStatus" runat="server" CssClass="pageTitle" LogoutPageUrl="~/default.aspx" /> </div>
         </div>
         
         <asp:ContentPlaceHolder ID="titleBodyPlaceHolder" runat="server"> <!-- Title Placeholder Starts Here -->
