@@ -1,9 +1,13 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Configuration;
+using System.Data;
+using System.Data.SqlClient;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
 
@@ -16,10 +20,21 @@ namespace OSS_Asset_Management.adminPages
             txtNewUser.Attributes["placeholder"] = "Enter a New Username"; // add a placeholder to the username text box
             txtNewPassword.Attributes["placeholder"] = "Enter a New Password"; // adds an additonal place holder
             txtEmail.Attributes["placeholder"] = "Enter User's Email Address";
+            txtName.Attributes["placeholder"] = "Enter User's Full Name";
         }
 
         protected void btnRegister_Click(object sender, EventArgs e)
         {
+            string uname, name = null;
+            uname = txtNewUser.Text;
+            name = txtName.Text;
+            SqlConnection dataConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString());
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "INSERT INTO tblUserNameToName(UserName, fullName) VALUES('" + uname + "', '" + name + "');";
+            cmd.Connection = dataConnection;
+
+
+
             var idDbContext = new IdentityDbContext("userConnectionString");
             var userStore = new UserStore<IdentityUser>(idDbContext);
             var uMan = new UserManager<IdentityUser>(userStore);
@@ -29,14 +44,22 @@ namespace OSS_Asset_Management.adminPages
             if (r.Succeeded)
             {
                 registerLiteral.Text = ("Successfully Created " + txtNewUser.Text + "'s Account");
+                dataConnection.Open();
+                cmd.ExecuteNonQuery();
+                dataConnection.Close();
+
             }
             else
                 registerLiteral.Text = "Error Creating Account: " + r.Errors.FirstOrDefault();
+
         }
 
-        protected void txtConfNewPassword_TextChanged(object sender, EventArgs e)
+        protected void txtConfNewPassword_TextChanged(object sender, EventArgs e) //unused method
         {
 
         }
     }
 }
+
+
+    

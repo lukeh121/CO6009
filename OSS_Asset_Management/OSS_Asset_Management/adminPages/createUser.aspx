@@ -7,6 +7,9 @@
         <div id="user">
             <asp:TextBox ID="txtNewUser" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
         </div>
+        <div id="name">
+           <asp:TextBox ID="txtName" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
+        </div>
         <div id ="userEmail">
              <asp:TextBox ID="txtEmail" runat="server" CssClass="txtBoxNewLogin"></asp:TextBox>
         </div>
