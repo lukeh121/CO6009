@@ -165,3 +165,9 @@ p.LoginText{
     font-family:Quicksand_Book;
     font-size:10pt;
 }
+.successLiteral{
+    font-family:Quicksand_Book;
+    color:green;
+    font-size:10pt;
+    padding-bottom:10pt;
+}

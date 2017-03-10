@@ -28,9 +28,9 @@ namespace OSS_Asset_Management.adminPages
             string uname, name = null;
             uname = txtNewUser.Text;
             name = txtName.Text;
-            SqlConnection dataConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString());
-            SqlCommand cmd = new SqlCommand();
-            cmd.CommandText = "INSERT INTO tblUserNameToName(UserName, fullName) VALUES('" + uname + "', '" + name + "');";
+            SqlConnection dataConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString()); //enables new data connection
+            SqlCommand cmd = new SqlCommand(); //creates new sqlCommand Object
+            cmd.CommandText = "INSERT INTO tblUserNameToName(UserName, fullName) VALUES('" + uname + "', '" + name + "');"; //command query
             cmd.Connection = dataConnection;
 
 

@@ -4,6 +4,8 @@ using System.Linq;
 using System.Web;
 using System.Web.UI;
 using System.Web.UI.WebControls;
+using System.Data.SqlClient;
+using System.Configuration;
 
 namespace OSS_Asset_Management.UserArea
 {
@@ -11,7 +13,19 @@ namespace OSS_Asset_Management.UserArea
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string loggedInUserName = System.Web.HttpContext.Current.User.Identity.Name;
+            SqlConnection dataConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString());
+            SqlCommand cmd = new SqlCommand();
+            cmd.CommandText = "SELECT DISTINCT fullName FROM tblUserNameToName WHERE UserName LIKE '" + loggedInUserName + "';";
+            cmd.Connection = dataConnection;
+            dataConnection.Open();
+            cmd.ExecuteNonQuery();
+            var fullName = cmd.ExecuteScalar().ToString();
+            lblfName.Text = fullName;
+            dataConnection.Close();
+            
 
+       
         }
     }
 }
