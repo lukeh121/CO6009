@@ -142,6 +142,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="adminPages\admin.aspx" />
     <Content Include="adminPages\createUser.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Styles\userArea.css" />
@@ -156,6 +157,7 @@
     <Content Include="Fonts\Quicksand_Light_Oblique.otf" />
     <Content Include="UserArea\default.aspx" />
     <Content Include="UserArea\userMaster.Master" />
+    <Content Include="adminPages\adminMstr.Master" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -171,6 +173,20 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="adminPages\admin.aspx.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\admin.aspx.designer.cs">
+      <DependentUpon>admin.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\adminMstr.Master.cs">
+      <DependentUpon>adminMstr.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\adminMstr.Master.designer.cs">
+      <DependentUpon>adminMstr.Master</DependentUpon>
+    </Compile>
     <Compile Include="adminPages\createUser.aspx.cs">
       <DependentUpon>createUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>

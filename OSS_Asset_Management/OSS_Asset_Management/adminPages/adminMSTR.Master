@@ -1,0 +1,32 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="adminMstr.Master.cs" Inherits="OSS_Asset_Management.adminPages.adminMSTR" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title> adminMaster </title>
+    <link href="../Styles/defaultStyles.css" rel="stylesheet" type="text/css"/>
+    <link href="../Styles/userArea.css" rel="stylesheet" type="text/css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/> <!-- enabling viewport width -->
+    <meta charset="UTF-8"/> 
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+        <div id ="navbarHorizontal">
+            <div id="logoContainer">
+               <h1 class ="pageLogo"> Asset+ <span id="pageName">IT Asset Management</span></h1>
+            </div>
+             <div id="login">
+            <asp:LoginName ID="userName" runat="server" CssClass="login" />
+            <asp:LoginStatus ID="loginStatus" runat="server" CssClass="login" LogoutPageUrl="~/default.aspx" LogoutAction="RedirectToLoginPage" /> </div>
+        </div>
+        
+            <asp:ContentPlaceHolder ID="bodyPlaceHolder" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>

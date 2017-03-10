@@ -13,11 +13,18 @@ a{
 }
 li{
     list-style:none;
-    paddint-top: 5px;
+    padding-top: 5px;
     padding-bottom:5px;
 }
 #navigationBar{
     background-color:white;
    
     border-radius:2px;
+}
+#login{
+    color:white;
+    font-family:Quicksand_Book;
+}
+a.admin{
+    color:white;
 }
