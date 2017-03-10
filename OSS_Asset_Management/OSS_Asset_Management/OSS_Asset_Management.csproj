@@ -144,6 +144,7 @@
   <ItemGroup>
     <Content Include="adminPages\admin.aspx" />
     <Content Include="adminPages\createUser.aspx" />
+    <Content Include="adminPages\deleteUser.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Styles\userArea.css" />
     <Content Include="packages.config" />
@@ -193,6 +194,13 @@
     </Compile>
     <Compile Include="adminPages\createUser.aspx.designer.cs">
       <DependentUpon>createUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\deleteUser.aspx.cs">
+      <DependentUpon>deleteUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\deleteUser.aspx.designer.cs">
+      <DependentUpon>deleteUser.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>
