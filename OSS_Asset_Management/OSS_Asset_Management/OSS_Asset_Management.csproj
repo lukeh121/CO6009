@@ -142,7 +142,6 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="AdministratorPages\admin.aspx" />
     <Content Include="adminPages\createUser.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Styles\userArea.css" />
@@ -172,13 +171,6 @@
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="AdministratorPages\admin.aspx.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="AdministratorPages\admin.aspx.designer.cs">
-      <DependentUpon>admin.aspx</DependentUpon>
-    </Compile>
     <Compile Include="adminPages\createUser.aspx.cs">
       <DependentUpon>createUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
