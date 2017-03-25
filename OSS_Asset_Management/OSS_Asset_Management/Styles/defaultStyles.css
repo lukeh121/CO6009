@@ -16,7 +16,7 @@ body {
     font-family: 'Quicksand_Book';
     src: url('../Fonts/Quicksand_Book.otf') format('opentype');
 }
-h1,h2,h3{ /* Setting default heading styles*/
+h2,h3{ /* Setting default heading styles*/
    font-family: Quicksand_Bold,cursive;
    text-shadow: 0px 0px 4px #000;
 }
@@ -24,6 +24,8 @@ p{ /*Setting default pararaph*/
     font-family: Quicksand_Bold;
 }
 h1.pageTitle{
+    font-family: Quicksand_Bold,cursive;
+    text-shadow: 0px 0px 4px #000;
     color:white;
     padding-left:10px;
     font-size:16pt;

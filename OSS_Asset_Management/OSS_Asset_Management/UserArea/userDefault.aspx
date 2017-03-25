@@ -5,6 +5,6 @@
     <h1 class ="pageTitle"> Home </h1> <!-- style for title in defaultStyles.css -->
 </asp:Content>
 <asp:Content ID ="bodyContent" ContentPlaceHolderID="userBodyPlaceHolder" runat="server"> <!-- User Body Placeholder -->
-      <h1 class ="pageTitle"> Welcome <asp:Label ID="lblfName" runat="server" Text=""></asp:Label> </h1>
+      <h1 class ="welcomeMessage"> Welcome <asp:Label ID="lblfName" runat="server" Text=""></asp:Label> </h1>
 </asp:Content>
 

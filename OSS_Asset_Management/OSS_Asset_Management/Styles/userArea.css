@@ -33,7 +33,7 @@ a.navLinks{
 }
 div.bodyNavContainer{
     width:100%;
-    display:block;
+    display:inline-block;
 
 }
 div.leftNavFloat{
@@ -41,6 +41,14 @@ div.leftNavFloat{
     float:left;
 }
 div.rightBodyFloat{
-    width:85%;
-    float:left;
+    width:80%;
+    float:right;
+    background-color:white;
+    border-radius:2px;
+}
+h1.welcomeMessage{
+    color:#1487BF;
+    font-family:Quicksand_Book,cursive;
+    text-decoration:none;
+    padding:0px;
 }
