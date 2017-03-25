@@ -26,20 +26,26 @@
         
         <asp:ContentPlaceHolder ID="titleBodyPlaceHolder" runat="server"> <!-- Title Placeholder Starts Here -->
         </asp:ContentPlaceHolder>
-           
-        <div id="navigationBar"> <!-- User Navigation Bar --> 
-            <nav> <!-- Navigation Container -->
-                <ul><!-- styles in UserArea.css -->
-                    <li><a href="default.aspx"> Home </a></li>
-                    <li><a href=""> Create New Asset </a></li>
-                </ul>
-            </nav>
-        </div>
-        <asp:ContentPlaceHolder ID="userBodyPlaceHolder" runat="server"> <!-- User Body Placeholder -->
+           <div class= "bodyNavContainer">
+            <div class= "leftNavFloat">
+             <div id="navigationBar"> <!-- User Navigation Bar --> 
+                <nav> <!-- Navigation Container -->
+                    <ul><!-- styles in UserArea.css -->
+                        <li><a class="navLinks" href="userDefault.aspx"> Home </a></li>
+                        <li><a class="navLinks" href=""> Create New Asset </a></li>
+                        <li><a class="navLinks" href="../adminPages/admin.aspx"> Admin Tools</a></li>
 
-        </asp:ContentPlaceHolder>
-     
+                    </ul>
+                </nav>
+               </div>
+              </div>
 
+            <div class ="rightBodyFloat">
+              <asp:ContentPlaceHolder ID="userBodyPlaceHolder" runat="server"> <!-- User Body Placeholder -->
+
+              </asp:ContentPlaceHolder>
+            </div>
+           </div>
         <div id="footer">
             <footer>
                 <p class ="pageFooter">  Asset+  </p> 

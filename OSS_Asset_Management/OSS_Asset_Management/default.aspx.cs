@@ -27,7 +27,7 @@ namespace OSS_Asset_Management
             if (user != null)
             {
                 LogUserIn(uMan, user);
-                Response.Redirect("~/UserArea/default.aspx");
+                Response.Redirect("~/UserArea/userDefault.aspx");
             }
             else
             {

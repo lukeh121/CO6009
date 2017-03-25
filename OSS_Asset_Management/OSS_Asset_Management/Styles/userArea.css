@@ -6,7 +6,7 @@
     src: url('../Fonts/Quicksand_Book.otf') format('opentype');
 }
 a{
-    border:solid 2px;
+    
     color:#1487BF;
     font-family:Quicksand_Book,cursive;
     text-decoration:none;
@@ -18,7 +18,7 @@ li{
 }
 #navigationBar{
     background-color:white;
-   
+    box-shadow: 0 8px 16px 0 #333;
     border-radius:2px;
 }
 #login{
@@ -27,4 +27,20 @@ li{
 }
 a.admin{
     color:white;
+}
+a.navLinks{
+    border-style:none;
+}
+div.bodyNavContainer{
+    width:100%;
+    display:block;
+
+}
+div.leftNavFloat{
+    width:15%;
+    float:left;
+}
+div.rightBodyFloat{
+    width:85%;
+    float:left;
 }
