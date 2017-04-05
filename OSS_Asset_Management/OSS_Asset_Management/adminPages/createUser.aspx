@@ -1,7 +1,9 @@
-﻿<%@ Page Title=" Asset+ | Create User " Language="C#" MasterPageFile="~/adminPages/adminMstr.Master" AutoEventWireup="true" CodeBehind="createUser.aspx.cs" Inherits="OSS_Asset_Management.adminPages.createUser" %>
+﻿<%@ Page Title=" Asset+ | Create User " Language="C#" MasterPageFile="~/UserArea/userMaster.Master" AutoEventWireup="true" CodeBehind="createUser.aspx.cs" Inherits="OSS_Asset_Management.adminPages.createUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="bodyPlaceHolder" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="titleBodyPlaceHolder" runat="server">
+</asp:Content>
+<asp:Content ID="Content2" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
     <h1 class="pageTitle"> User Creation </h1>
     <div id="userCreation">
         <div class="successLiteral">

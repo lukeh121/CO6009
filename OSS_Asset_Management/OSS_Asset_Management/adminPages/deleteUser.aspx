@@ -1,7 +1,10 @@
-﻿<%@ Page Title="Asset+ | DeleteUser" Language="C#" MasterPageFile="~/adminPages/adminMstr.Master" AutoEventWireup="true" CodeBehind="deleteUser.aspx.cs" Inherits="OSS_Asset_Management.adminPages.deleteUser" %>
+﻿<%@ Page Title="Asset+ | DeleteUser" Language="C#" MasterPageFile="~/UserArea/userMaster.Master" AutoEventWireup="true" CodeBehind="deleteUser.aspx.cs" Inherits="OSS_Asset_Management.adminPages.deleteUser" %>
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
-<asp:Content ID="Content2" ContentPlaceHolderID="bodyPlaceHolder" runat="server">
+<asp:Content ID="Content3" ContentPlaceHolderID="titleBodyPlaceHolder" runat="server">
+</asp:Content>
+
+<asp:Content ID="Content2" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
     
      <h1 class="pageTitle"> Remove User Access </h1>
     <div id="removeUserCard">
