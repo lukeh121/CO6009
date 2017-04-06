@@ -31,7 +31,7 @@
              <div id="navigationBar"> <!-- User Navigation Bar --> 
                 <nav> <!-- Navigation Container -->
                     <ul><!-- styles in UserArea.css -->
-                        <li><a class="navLinks" href="userDefault.aspx"> Home </a></li>
+                        <li><a class="navLinks" href="../UserArea/userDefault.aspx"> Home </a></li>
                         <li><a class="navLinks" href=""> Create New Asset </a></li>
                         <li><a class="navLinks" href="../adminPages/admin.aspx"> Admin Tools</a></li>
 

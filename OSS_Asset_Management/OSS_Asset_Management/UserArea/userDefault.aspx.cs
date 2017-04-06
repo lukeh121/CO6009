@@ -13,6 +13,7 @@ namespace OSS_Asset_Management.UserArea
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            try { 
             string loggedInUserName = System.Web.HttpContext.Current.User.Identity.Name;
             SqlConnection dataConnection = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString());
             SqlCommand cmd = new SqlCommand();
@@ -23,9 +24,14 @@ namespace OSS_Asset_Management.UserArea
             var fullName = cmd.ExecuteScalar().ToString();
             lblfName.Text = fullName;
             dataConnection.Close();
-            
+            }
+            catch
+            {
+                lblfName.Text = " user ";
+            }
 
-       
+
+
         }
     }
 }
