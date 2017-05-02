@@ -2,9 +2,10 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="titleBodyPlaceHolder" runat="server">
+    <h1 class="pageTitle"> Current Users </h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
-     <h1 class="pageTitle"> Current Users </h1>
+     
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConnectionString %>" SelectCommand="SELECT DISTINCT tblUserNameToName.fullName, AspNetUsers.UserName, AspNetUsers.Email FROM tblUserNameToName INNER JOIN AspNetUsers ON AspNetUsers.UserName = tblUserNameToName.UserName"></asp:SqlDataSource>
 
     <asp:GridView ID="gridUsers" runat="server" AutoGenerateColumns="False" CellSpacing="-1" CssClass="gridUsers" DataSourceID="SqlDataSource1" GridLines="None" OnSelectedIndexChanged="OnSelectedIndexChanged">

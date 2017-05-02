@@ -10,6 +10,7 @@
         <ul>
             <li><a class="admin" href = "createUser.aspx"> Create User </a></li>
             <li><a class="admin" href = "deleteUser.aspx"> Remove User Access </a></li>
+            <li><a class="admin" href="viewUserList.aspx"> View User List</a></li>
         </ul>
     </nav>
 

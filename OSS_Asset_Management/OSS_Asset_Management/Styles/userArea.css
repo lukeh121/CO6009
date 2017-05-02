@@ -55,5 +55,8 @@ h1.welcomeMessage{
 }
 .gridUsers{
     font-family:Quicksand_Book;
-
+}
+.formLabel{
+    font-family:Quicksand_Book;
+    color:black;
 }
