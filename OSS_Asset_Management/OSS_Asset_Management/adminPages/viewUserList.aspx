@@ -9,14 +9,11 @@
 
     <asp:GridView ID="gridUsers" runat="server" AutoGenerateColumns="False" CellSpacing="-1" CssClass="gridUsers" DataSourceID="SqlDataSource1" GridLines="None" OnSelectedIndexChanged="OnSelectedIndexChanged">
         <Columns>
+            <asp:HyperLinkField DataNavigateUrlFields="UserName" DataNavigateUrlFormatString="viewSpecificUser.aspx?uID={0}" Text="View Profile" />
             <asp:BoundField DataField="fullName" HeaderText="Full Name" SortExpression="fullName" />
             <asp:BoundField DataField="UserName" HeaderText="User Name" SortExpression="UserName" />
             <asp:BoundField DataField="Email" HeaderText="Email" SortExpression="Email" />
-        <asp:TemplateField>
-             <ItemTemplate>  
-                            <asp:Button ID="btnSelect" runat="server" Width="60" Text="Select" CommandName="selectButton" CommandArgument="<%# ((GridViewRow) Container).RowIndex %>" />
-                 </ItemTemplate>
-        </asp:TemplateField>
+       
         </Columns>
     </asp:GridView>
     <asp:Literal ID="Literal1" runat="server"></asp:Literal>

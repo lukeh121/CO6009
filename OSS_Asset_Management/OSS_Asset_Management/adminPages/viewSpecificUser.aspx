@@ -6,6 +6,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
     <a href="viewUserList.aspx"> < Back To Users List </a>
       <h1 class="pageTitle">User Profile: </h1>
-    <asp:Literal ID="litTitle" runat="server"></asp:Literal>
+    <asp:Literal ID="litUserName" runat="server"></asp:Literal>
 </asp:Content>
 

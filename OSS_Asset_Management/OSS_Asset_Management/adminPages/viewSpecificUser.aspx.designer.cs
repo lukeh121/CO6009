@@ -13,12 +13,12 @@ namespace OSS_Asset_Management.adminPages {
     public partial class viewSpecificUser {
         
         /// <summary>
-        /// litTitle control.
+        /// litUserName control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Literal litTitle;
+        protected global::System.Web.UI.WebControls.Literal litUserName;
     }
 }
