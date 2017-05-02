@@ -13,12 +13,12 @@ namespace OSS_Asset_Management.adminPages {
     public partial class viewSpecificUser {
         
         /// <summary>
-        /// userRepeater control.
+        /// litTitle control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Repeater userRepeater;
+        protected global::System.Web.UI.WebControls.Literal litTitle;
     }
 }
