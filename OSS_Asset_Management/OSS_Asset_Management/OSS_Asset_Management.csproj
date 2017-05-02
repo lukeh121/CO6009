@@ -145,6 +145,8 @@
     <Content Include="adminPages\admin.aspx" />
     <Content Include="adminPages\createUser.aspx" />
     <Content Include="adminPages\deleteUser.aspx" />
+    <Content Include="adminPages\viewSpecificUser.aspx" />
+    <Content Include="adminPages\viewUserList.aspx" />
     <Content Include="default.aspx" />
     <Content Include="Styles\userArea.css" />
     <Content Include="packages.config" />
@@ -193,6 +195,20 @@
     </Compile>
     <Compile Include="adminPages\deleteUser.aspx.designer.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\viewSpecificUser.aspx.cs">
+      <DependentUpon>viewSpecificUser.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\viewSpecificUser.aspx.designer.cs">
+      <DependentUpon>viewSpecificUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\viewUserList.aspx.cs">
+      <DependentUpon>viewUserList.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\viewUserList.aspx.designer.cs">
+      <DependentUpon>viewUserList.aspx</DependentUpon>
     </Compile>
     <Compile Include="default.aspx.cs">
       <DependentUpon>default.aspx</DependentUpon>

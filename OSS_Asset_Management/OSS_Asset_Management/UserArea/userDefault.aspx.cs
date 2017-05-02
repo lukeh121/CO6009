@@ -25,7 +25,7 @@ namespace OSS_Asset_Management.UserArea
             lblfName.Text = fullName;
             dataConnection.Close();
             }
-            catch
+            catch //if query returns nulls
             {
                 lblfName.Text = " user ";
             }

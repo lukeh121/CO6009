@@ -51,4 +51,9 @@ h1.welcomeMessage{
     font-family:Quicksand_Book,cursive;
     text-decoration:none;
     padding:0px;
+
+}
+.gridUsers{
+    font-family:Quicksand_Book;
+
 }
