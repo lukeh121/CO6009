@@ -11,7 +11,16 @@ namespace OSS_Asset_Management.UserArea
     {
         protected void Page_Load(object sender, EventArgs e)
         {
+            string date = DateTime.Now.ToString();
+            lblDateTime.Text = date;
+        }
 
+        protected void Timer1_Tick(object sender, EventArgs e)
+        { //unused method  
+        }
+
+        protected void Timer1_Tick1(object sender, EventArgs e)
+        {//unused method
         }
     }
 }
