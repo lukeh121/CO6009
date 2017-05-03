@@ -33,6 +33,7 @@
                     <ul><!-- styles in UserArea.css -->
                         <li><a class="navLinks" href="../UserArea/userDefault.aspx"> Home </a></li>
                         <li><a class="navLinks" href="../UserArea/createAsset.aspx"> Create New Asset </a></li>
+                        <li><a class="navLinks" href="../UserArea/assetCatalogue.aspx"> Asset Catalogue </a></li>
                         <li><a class="navLinks" href="../adminPages/admin.aspx"> Admin Tools</a></li>
 
                     </ul>

@@ -6,5 +6,8 @@
 </asp:Content>
 <asp:Content ID ="bodyContent" ContentPlaceHolderID="userBodyPlaceHolder" runat="server"> <!-- User Body Placeholder -->
          <h1 class ="welcomeMessage"> Welcome <asp:Label ID="lblfName" runat="server" Text=""></asp:Label> </h1>
+    <div id=" assetPossesion">
+        <asp:GridView ID="gridPossesion" runat="server"></asp:GridView>
+    </div>
 </asp:Content>
 
