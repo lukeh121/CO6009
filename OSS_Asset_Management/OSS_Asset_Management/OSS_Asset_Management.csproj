@@ -159,6 +159,7 @@
     <Content Include="Fonts\Quicksand_Light.otf" />
     <Content Include="Fonts\Quicksand_Light_Oblique.otf" />
     <Content Include="UserArea\assetCatalogue.aspx" />
+    <Content Include="UserArea\assetRequest.aspx" />
     <Content Include="UserArea\createAsset.aspx" />
     <Content Include="UserArea\userDefault.aspx" />
     <Content Include="UserArea\userMaster.Master" />
@@ -174,6 +175,7 @@
     <Content Include="scripts\ai.0.22.9-build00167.js" />
     <Content Include="scripts\ai.0.22.9-build00167.min.js" />
     <Content Include="Styles\defaultStyles.css" />
+    <Content Include="UserArea\viewAsset.aspx" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
@@ -238,6 +240,13 @@
     <Compile Include="UserArea\assetCatalogue.aspx.designer.cs">
       <DependentUpon>assetCatalogue.aspx</DependentUpon>
     </Compile>
+    <Compile Include="UserArea\assetRequest.aspx.cs">
+      <DependentUpon>assetRequest.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\assetRequest.aspx.designer.cs">
+      <DependentUpon>assetRequest.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserArea\createAsset.aspx.cs">
       <DependentUpon>createAsset.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -258,6 +267,13 @@
     </Compile>
     <Compile Include="UserArea\userMaster.Master.designer.cs">
       <DependentUpon>userMaster.Master</DependentUpon>
+    </Compile>
+    <Compile Include="UserArea\viewAsset.aspx.cs">
+      <DependentUpon>viewAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\viewAsset.aspx.designer.cs">
+      <DependentUpon>viewAsset.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>

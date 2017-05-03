@@ -8,6 +8,7 @@
     <h2> Complete Asset Register </h2>
     <asp:GridView ID="gridCatalogue" runat="server" AutoGenerateColumns="False" DataKeyNames="aID" DataSourceID="SqlDataSource1" CssClass="grid">
         <Columns>
+            <asp:HyperLinkField DataNavigateUrlFields="aID" DataNavigateUrlFormatString="viewAsset.aspx?aID={0}" Text="View" />
             <asp:BoundField DataField="aID" HeaderText="Asset ID" InsertVisible="False" ReadOnly="True" SortExpression="aID" />
             <asp:BoundField DataField="serialNo" HeaderText="Serial Number" SortExpression="serialNo" />
             <asp:BoundField DataField="assetName" HeaderText="Name" SortExpression="assetName" />
