@@ -158,6 +158,7 @@
     <Content Include="Fonts\Quicksand_Dash.otf" />
     <Content Include="Fonts\Quicksand_Light.otf" />
     <Content Include="Fonts\Quicksand_Light_Oblique.otf" />
+    <Content Include="UserArea\createAsset.aspx" />
     <Content Include="UserArea\userDefault.aspx" />
     <Content Include="UserArea\userMaster.Master" />
     <None Include="Web.Debug.config">
@@ -229,6 +230,13 @@
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
+    <Compile Include="UserArea\createAsset.aspx.cs">
+      <DependentUpon>createAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\createAsset.aspx.designer.cs">
+      <DependentUpon>createAsset.aspx</DependentUpon>
+    </Compile>
     <Compile Include="UserArea\userDefault.aspx.cs">
       <DependentUpon>userDefault.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
