@@ -8,7 +8,7 @@
      
         <asp:SqlDataSource ID="SqlDataSource1" runat="server" ConnectionString="<%$ ConnectionStrings:userConnectionString %>" SelectCommand="SELECT DISTINCT tblUserNameToName.fullName, AspNetUsers.UserName, AspNetUsers.Email FROM tblUserNameToName INNER JOIN AspNetUsers ON AspNetUsers.UserName = tblUserNameToName.UserName"></asp:SqlDataSource>
 
-    <asp:GridView ID="gridUsers" runat="server" AutoGenerateColumns="False" CellSpacing="-1" CssClass="gridUsers" DataSourceID="SqlDataSource1" GridLines="None" OnSelectedIndexChanged="OnSelectedIndexChanged">
+    <asp:GridView ID="gridUsers" runat="server" AutoGenerateColumns="False" CellSpacing="-1" CssClass="grid" DataSourceID="SqlDataSource1" GridLines="None" OnSelectedIndexChanged="OnSelectedIndexChanged">
         <Columns>
             <asp:HyperLinkField DataNavigateUrlFields="UserName" DataNavigateUrlFormatString="viewSpecificUser.aspx?uID={0}" Text="View Profile" />
             <asp:BoundField DataField="fullName" HeaderText="Full Name" SortExpression="fullName" />
