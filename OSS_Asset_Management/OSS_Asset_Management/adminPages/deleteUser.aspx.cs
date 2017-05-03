@@ -42,8 +42,6 @@ namespace OSS_Asset_Management.adminPages
                 btnDelete.Visible = true;
                 lblUserName.Visible = true;
             }
-
-           
                 cmd.Connection = dataConnection;
                 dataConnection.Open();
                 cmd.ExecuteNonQuery();

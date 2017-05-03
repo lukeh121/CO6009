@@ -6,11 +6,22 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
     <h2> Asset Creation Tool</h2>
+    <div class ="successLiteral">
+            <asp:Literal ID="successLiteral" runat="server"></asp:Literal>
+    </div>
     <div id ="serialNum">
         <asp:Label ID="lblSerialNumber" runat="server" Text="Serial Number: " AssociatedControlID="txtSerialNum"></asp:Label><asp:TextBox ID="txtSerialNum" runat="server"></asp:TextBox>
     </div>
     <div id ="name">
         <asp:Label ID="lblName" runat="server" Text="Name:" AssociatedControlID="txtName"></asp:Label><asp:TextBox ID="txtName" runat="server"></asp:TextBox>
+    </div>
+    <div id ="model">
+        <asp:Label ID="lblModel" runat="server" Text="Model: "></asp:Label>
+        <asp:TextBox ID="txtModel" runat="server"></asp:TextBox>
+    </div>
+    <div id ="manufacturer">
+         <asp:Label ID="lbl" runat="server" Text="Manufacturer: "></asp:Label>
+        <asp:TextBox ID="txtManuf" runat="server"></asp:TextBox>
     </div>
     <div id ="category">
         <asp:Label ID="lblCategory" runat="server" Text="Category: " AssociatedControlID="drpCategory"></asp:Label><asp:DropDownList ID="drpCategory" runat="server" DataSourceID="SqlDataSource1" DataTextField="Category" DataValueField="Category"></asp:DropDownList>
@@ -23,6 +34,6 @@
         <asp:Label ID="lblDescription" runat="server" Text="Description: " AssociatedControlID="txtQty"></asp:Label><asp:TextBox ID="txtDescription" runat="server"></asp:TextBox>
     </div>
     <div id="submit">
-        <asp:Button ID="btnSubmit" runat="server" Text="Button" />
+        <asp:Button ID="btnSubmit" runat="server" Text="Create Asset" CssClass="btnSubmit" OnClick="btnSubmit_Click"/>
     </div>
 </asp:Content>
