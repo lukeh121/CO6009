@@ -28,6 +28,7 @@ namespace OSS_Asset_Management.UserArea
             catch //if query returns nulls
             {
                 lblfName.Text = " user ";
+                Response.Redirect("~/default.aspx");
             }
 
 
