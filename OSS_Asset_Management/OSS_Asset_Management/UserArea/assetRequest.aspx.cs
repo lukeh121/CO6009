@@ -73,12 +73,12 @@ namespace OSS_Asset_Management.UserArea
                 cmd.Connection = dataConnection;
                 dataConnection.Open();
                 cmd.ExecuteNonQuery();
-                successLiteral.Text = "Success";
+                successLiteral.Text = "Success - Await for approval notification via email";
             }
 
             catch
             {
-                successLiteral.Text = "error";
+                successLiteral.Text = "Error - The Request has not been submitted for approval";
             }
             dataConnection.Close();
         }
