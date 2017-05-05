@@ -6,12 +6,15 @@
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
     <h2> Create Support Ticket </h2>
+    <div class ="successLiteral">
+    <asp:Literal ID="litSuccess" runat="server"></asp:Literal>
+    </div>
     <table>
 
     <tr>
     <div id ="category">
        <td> <asp:Label ID="lblCat" runat="server" Text="Category: "></asp:Label></td>
-       <td> <asp:DropDownList ID="DropDownList1" runat="server" DataSourceID="viewCategory" DataTextField="Category" DataValueField="Category" AppendDataBoundItems="True">
+       <td> <asp:DropDownList ID="drpCategory" runat="server" DataSourceID="viewCategory" DataTextField="Category" DataValueField="Category" AppendDataBoundItems="True">
            <asp:ListItem>-Select-</asp:ListItem>
            </asp:DropDownList>
          <asp:SqlDataSource ID="viewCategory" runat="server" ConnectionString="<%$ ConnectionStrings:assetuserConnectionString %>" SelectCommand="SELECT * FROM [tblCategory]"></asp:SqlDataSource>
@@ -33,7 +36,7 @@
     </tr>
         <tr>
             <td></td>
-            <td> <asp:Button ID="btnSubmit" runat="server" Text="Submit" /> </td>
+            <td> <asp:Button ID="btnSubmit" runat="server" Text="Submit" OnClick="btnSubmit_Click" /> </td>
         </tr>
         </table>
 </asp:Content>

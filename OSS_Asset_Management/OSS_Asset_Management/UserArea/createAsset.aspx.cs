@@ -33,6 +33,7 @@ namespace OSS_Asset_Management.UserArea
             catch
             {
                 successLiteral.Text = "Error Storing Asset Please Re-Complete Form";
+                dataConnection.Close();
             }
            
             dataConnection.Close();

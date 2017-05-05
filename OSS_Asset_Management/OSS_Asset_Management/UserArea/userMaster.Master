@@ -35,7 +35,9 @@
                         <li><a class="navLinks" href="../UserArea/createAsset.aspx"> Create New Asset </a></li>
                         <li><a class="navLinks" href="../UserArea/assetCatalogue.aspx"> Asset Catalogue </a></li>
                         <li><a class="navLinks" href="../UserArea/assetRequest.aspx"> Request an Asset </a></li>
-                        <li><a class="navLinks" href="../UserAread/searchAsset.aspx"> Search Assets</a></li>
+                        <li><a class="navLinks" href="../UserArea/searchAsset.aspx"> Search Assets</a></li>
+
+                        <li><a class="navLinks" href="../UserArea/supportHelpdesk.aspx"> Support Helpdesk </a></li>
                         <li><a class="navLinks" href="../adminPages/admin.aspx"> Admin Tools</a></li>
 
                     </ul>

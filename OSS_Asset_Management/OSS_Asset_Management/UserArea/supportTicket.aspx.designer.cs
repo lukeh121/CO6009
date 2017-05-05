@@ -13,6 +13,15 @@ namespace OSS_Asset_Management.UserArea {
     public partial class supportTicket {
         
         /// <summary>
+        /// litSuccess control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.Literal litSuccess;
+        
+        /// <summary>
         /// lblCat control.
         /// </summary>
         /// <remarks>
@@ -22,13 +31,13 @@ namespace OSS_Asset_Management.UserArea {
         protected global::System.Web.UI.WebControls.Label lblCat;
         
         /// <summary>
-        /// DropDownList1 control.
+        /// drpCategory control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.DropDownList DropDownList1;
+        protected global::System.Web.UI.WebControls.DropDownList drpCategory;
         
         /// <summary>
         /// viewCategory control.
