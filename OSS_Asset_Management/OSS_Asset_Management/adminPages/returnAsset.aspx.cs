@@ -1,5 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Configuration;
+using System.Data.SqlClient;
 using System.Linq;
 using System.Web;
 using System.Web.UI;
@@ -13,5 +15,9 @@ namespace OSS_Asset_Management.adminPages
         {
 
         }
+
+        protected void gridReturn_SelectedIndexChanged(object sender, EventArgs e)
+        {
+         
     }
 }
