@@ -5,8 +5,14 @@
     font-family: 'Quicksand_Book';
     src: url('../Fonts/Quicksand_Book.otf') format('opentype');
 }
+label{
+    font-family:Quicksand_Book;
+}
+p{
+    font-family :Quicksand_Book;
+}
 a{
-    
+  
     color:#1487BF;
     font-family:Quicksand_Book,cursive;
     text-decoration:none;

@@ -37,6 +37,27 @@ namespace OSS_Asset_Management.UserArea
             }
            
             dataConnection.Close();
+            //selection of Asset ID
+            SqlConnection dataConnection2 = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString());
+            SqlCommand command = new SqlCommand();
+            command.CommandText = "Select aID  from dbo.tblAssets where assetName like '" + txtName.Text +"'";
+            command.Connection = dataConnection2;
+            dataConnection2.Open();
+            command.ExecuteNonQuery();
+            var assetID = command.ExecuteScalar().ToString();
+            int id = Int32.Parse(assetID);
+            dataConnection2.Close();
+         
+
+            SqlConnection dataConnection3 = new SqlConnection(ConfigurationManager.ConnectionStrings["assetuserConnectionString"].ToString());
+            //Inserting Availavbility of asset
+            SqlCommand cmd2 = new SqlCommand();
+            cmd2.CommandText = "INSERT INTO dbo.tblAssetAvailability (aID,availability) Values (" + id + ", 'Available');";
+            cmd2.Connection = dataConnection3;
+            dataConnection3.Open();
+            cmd2.ExecuteNonQuery();
+            dataConnection2.Close();
+           
         }
     }
 }

@@ -5,4 +5,5 @@
     <h1 class="returnAsset"> Return Asset </h1>
 </asp:Content>
 <asp:Content ID="Content3" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
+    <asp:GridView ID="gridReturn" runat="server"></asp:GridView>
 </asp:Content>
