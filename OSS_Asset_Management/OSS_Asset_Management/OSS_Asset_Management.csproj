@@ -143,8 +143,10 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="adminPages\admin.aspx" />
+    <Content Include="adminPages\assignAsset.aspx" />
     <Content Include="adminPages\createUser.aspx" />
     <Content Include="adminPages\deleteUser.aspx" />
+    <Content Include="adminPages\returnAsset.aspx" />
     <Content Include="adminPages\userRoleManager.aspx" />
     <Content Include="adminPages\viewSpecificUser.aspx" />
     <Content Include="adminPages\viewUserList.aspx" />
@@ -190,6 +192,13 @@
     <Compile Include="adminPages\admin.aspx.designer.cs">
       <DependentUpon>admin.aspx</DependentUpon>
     </Compile>
+    <Compile Include="adminPages\assignAsset.aspx.cs">
+      <DependentUpon>assignAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\assignAsset.aspx.designer.cs">
+      <DependentUpon>assignAsset.aspx</DependentUpon>
+    </Compile>
     <Compile Include="adminPages\createUser.aspx.cs">
       <DependentUpon>createUser.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -203,6 +212,13 @@
     </Compile>
     <Compile Include="adminPages\deleteUser.aspx.designer.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\returnAsset.aspx.cs">
+      <DependentUpon>returnAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\returnAsset.aspx.designer.cs">
+      <DependentUpon>returnAsset.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminPages\userRoleManager.aspx.cs">
       <DependentUpon>userRoleManager.aspx</DependentUpon>
