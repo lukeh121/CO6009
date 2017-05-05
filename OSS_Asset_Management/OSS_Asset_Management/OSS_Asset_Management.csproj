@@ -161,6 +161,7 @@
     <Content Include="UserArea\assetCatalogue.aspx" />
     <Content Include="UserArea\assetRequest.aspx" />
     <Content Include="UserArea\createAsset.aspx" />
+    <Content Include="UserArea\searchAsset.aspx" />
     <Content Include="UserArea\userDefault.aspx" />
     <Content Include="UserArea\userMaster.Master" />
     <None Include="Web.Debug.config">
@@ -253,6 +254,13 @@
     </Compile>
     <Compile Include="UserArea\createAsset.aspx.designer.cs">
       <DependentUpon>createAsset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserArea\searchAsset.aspx.cs">
+      <DependentUpon>searchAsset.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\searchAsset.aspx.designer.cs">
+      <DependentUpon>searchAsset.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserArea\userDefault.aspx.cs">
       <DependentUpon>userDefault.aspx</DependentUpon>
