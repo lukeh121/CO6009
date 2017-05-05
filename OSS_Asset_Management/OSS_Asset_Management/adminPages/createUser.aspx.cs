@@ -10,6 +10,7 @@ using System.Web.UI.WebControls;
 
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Net.Mail;
 
 namespace OSS_Asset_Management.adminPages
 {
@@ -48,6 +49,22 @@ namespace OSS_Asset_Management.adminPages
                 cmd.ExecuteNonQuery();
                 dataConnection.Close();
 
+                //Email credentials
+                MailMessage email = new MailMessage();
+                SmtpClient client = new SmtpClient();
+                client.Port = 587;
+                client.EnableSsl = true;
+                client.Host = "smtp.gmail.com";
+                client.Timeout = 10000;
+                client.DeliveryMethod = SmtpDeliveryMethod.Network;
+                client.UseDefaultCredentials = false;
+                client.Credentials = new System.Net.NetworkCredential("assetplusnotification1@gmail.com", "AssetPlus123");
+                email.From = new MailAddress("assetplusnotification1@gmail.com");
+                email.To.Add(new MailAddress(txtEmail.Text));
+                email.Subject = "Asset+: Account Creation - " + txtName.Text;
+                email.Body = "Welcome To Asset+ " + txtName.Text + ", \n Here Are Your New User Credentials: \n Username: " + txtNewUser.Text + " \n Password: "+ txtNewPassword.Text + "\n Kind Regards, \n Asset+";
+                client.Send(email);
+
             }
             else
                 registerLiteral.Text = "Error Creating Account: " + r.Errors.FirstOrDefault();
@@ -58,6 +75,7 @@ namespace OSS_Asset_Management.adminPages
         {
 
         }
+        
     }
 }
 

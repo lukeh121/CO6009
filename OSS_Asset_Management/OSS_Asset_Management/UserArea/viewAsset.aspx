@@ -7,4 +7,6 @@
 <asp:Content ID="Content3" ContentPlaceHolderID="userBodyPlaceHolder" runat="server">
     <h2> Asset Record </h2>
     <asp:Label ID="lblAsset" runat="server" Text="Label"></asp:Label>
+    <asp:FormView ID="FormView1" runat="server"></asp:FormView>
+ 
 </asp:Content>

@@ -145,6 +145,7 @@
     <Content Include="adminPages\admin.aspx" />
     <Content Include="adminPages\createUser.aspx" />
     <Content Include="adminPages\deleteUser.aspx" />
+    <Content Include="adminPages\userRoleManager.aspx" />
     <Content Include="adminPages\viewSpecificUser.aspx" />
     <Content Include="adminPages\viewUserList.aspx" />
     <Content Include="default.aspx" />
@@ -162,6 +163,8 @@
     <Content Include="UserArea\assetRequest.aspx" />
     <Content Include="UserArea\createAsset.aspx" />
     <Content Include="UserArea\searchAsset.aspx" />
+    <Content Include="UserArea\supportHelpdesk.aspx" />
+    <Content Include="UserArea\supportTicket.aspx" />
     <Content Include="UserArea\userDefault.aspx" />
     <Content Include="UserArea\userMaster.Master" />
     <None Include="Web.Debug.config">
@@ -200,6 +203,13 @@
     </Compile>
     <Compile Include="adminPages\deleteUser.aspx.designer.cs">
       <DependentUpon>deleteUser.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="adminPages\userRoleManager.aspx.cs">
+      <DependentUpon>userRoleManager.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="adminPages\userRoleManager.aspx.designer.cs">
+      <DependentUpon>userRoleManager.aspx</DependentUpon>
     </Compile>
     <Compile Include="adminPages\viewSpecificUser.aspx.cs">
       <DependentUpon>viewSpecificUser.aspx</DependentUpon>
@@ -261,6 +271,20 @@
     </Compile>
     <Compile Include="UserArea\searchAsset.aspx.designer.cs">
       <DependentUpon>searchAsset.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserArea\supportHelpdesk.aspx.cs">
+      <DependentUpon>supportHelpdesk.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\supportHelpdesk.aspx.designer.cs">
+      <DependentUpon>supportHelpdesk.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="UserArea\supportTicket.aspx.cs">
+      <DependentUpon>supportTicket.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="UserArea\supportTicket.aspx.designer.cs">
+      <DependentUpon>supportTicket.aspx</DependentUpon>
     </Compile>
     <Compile Include="UserArea\userDefault.aspx.cs">
       <DependentUpon>userDefault.aspx</DependentUpon>

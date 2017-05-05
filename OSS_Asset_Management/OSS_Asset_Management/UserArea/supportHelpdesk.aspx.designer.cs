@@ -10,24 +10,24 @@
 namespace OSS_Asset_Management.UserArea {
     
     
-    public partial class viewAsset {
+    public partial class supportHelpdesk {
         
         /// <summary>
-        /// lblAsset control.
+        /// gridTickets control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblAsset;
+        protected global::System.Web.UI.WebControls.GridView gridTickets;
         
         /// <summary>
-        /// FormView1 control.
+        /// viewTickets control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.FormView FormView1;
+        protected global::System.Web.UI.WebControls.SqlDataSource viewTickets;
     }
 }
